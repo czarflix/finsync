@@ -6,7 +6,9 @@
 // ═══════════════════════════════════════════════════════════════════════════════
 // API CONFIGURATION
 // ═══════════════════════════════════════════════════════════════════════════════
-// Uses VITE_API_URL in production, falls back to /api for local dev (proxied by Vite)
+// IMPORTANT: VITE_API_URL must include /api suffix!
+// Example: https://finsync-ohhw.onrender.com/api
+// Local dev uses /api which Vite proxies to localhost:8000
 export const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
 
 // ═══════════════════════════════════════════════════════════════════════════════
