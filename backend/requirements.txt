@@ -1,0 +1,29 @@
+# FinSync Pro Backend Dependencies
+# Minimal, modular LangChain packages
+
+# FastAPI Stack
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+
+# LangChain Modular Packages
+langchain-huggingface       # HF Inference API connector
+langchain-community         # FAISS, BM25, Tavily
+langchain-text-splitters    # Document chunking
+langchain-core              # Base interfaces (Document, Tool, Prompts)
+langchain-openai            # GPT for answering
+langchain-classic           # AgentExecutor, Memory, create_react_agent
+langchain
+
+# Vector Search
+faiss-cpu
+
+# Keyword Search
+rank-bm25
+
+# Web Search
+tavily-python
+
+# PDF Processing
+pypdf
